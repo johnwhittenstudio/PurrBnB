@@ -1,0 +1,29 @@
+@{
+  Layout = "_Layout";
+  ViewData["Title"] = "Add Pet";
+}
+
+@model PurrBnB.Models.Dwelling
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h1 id="title">Add a pet</h1>
+        <h4>Add a pet to this dwelling:</h4>
+        <h2> @Html.DisplayFor(model => model.DwellingName)</h2>
+      </div>
+      <div class="card-body">
+        @using (Html.BeginForm())
+        {
+          @Html.HiddenFor(model => model.DwellingId)
+          @Html.Label("Select pet")
+          @Html.DropDownList("PetId")
+          <input id="button" class="btn btn-outline-dark" type="submit" value="Save" />
+        }
+        <button class="btn btn-outline-dark">@Html.ActionLink("Back to list of dwellings", "Index")</button>
+      </div>
+    </div>
+  </div>
+
+</div>

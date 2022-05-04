@@ -1,0 +1,25 @@
+@{
+  Layout = "_Layout";
+  ViewData["Title"] = "Delete Dwelling";
+}
+
+@model PurrBnB.Models.Dwelling
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h3>Delete Dwelling</h3>
+        <h1 id="title">Are you sure you want to remove this listed dwelling?</h1>
+      </div>
+      <div class="card-body">
+        <h4>@Html.DisplayNameFor(model => model.DwellingName):</h4>
+        <h2> @Html.DisplayFor(model => model.DwellingName)</h2>
+        @using (Html.BeginForm()){
+          <input id="button" class="btn btn-outline-dark my-sm-0" type="submit" value="Delete"/>
+        }
+      </div>
+    </div>
+    <button class="btn btn-outline-primary">@Html.ActionLink("Back to List of Dwellings", "Index")</button>
+  </div>
+</div>
