@@ -100,10 +100,10 @@ namespace PurrBnB.Models
 
 ## Contact <a id="contact"></a>
 
-Phil Curran [Email](mailto:pecurran@hotmail.com) • [LinkedIn](https://www.linkedin.com/in/philcurran/) • [GitHub](https://github.com/phil-curran) <br>
-Anastasia Han [Email](mailto:anastasia.han@yahoo.com) • [LinkedIn](https://www.linkedin.com/in/jungyeonhan/) • [GitHub](https://github.com/1ana-banana) <br>
-Brit Wallace [Email](mailto:britwallace888@gmail.com) • [LinkedIn](https://www.linkedin.com/in/brit-wallace/) • [GitHub](https://github.com/BritWallace) <br>
-Christen Weston [Email](mailto:paleeserecycle@gmail.com) • [LinkedIn](https://www.linkedin.com/in/christenweston/) • [GitHub](https://github.com/ChristenWeston) <br>
-John Whitten: [Email](mailto:johnwhitten.studio@gmail.com) • [LinkedIn](https://www.linkedin.com/in/johnwhitten-studio/) • [GitHub](https://github.com/johnwhittenstudio) <br>
+Phil Curran - [Email](mailto:pecurran@hotmail.com) • [LinkedIn](https://www.linkedin.com/in/philcurran/) • [GitHub](https://github.com/phil-curran) <br>
+Anastasia Han - [Email](mailto:anastasia.han@yahoo.com) • [LinkedIn](https://www.linkedin.com/in/jungyeonhan/) • [GitHub](https://github.com/1ana-banana) <br>
+Brit Wallace - [Email](mailto:britwallace888@gmail.com) • [LinkedIn](https://www.linkedin.com/in/brit-wallace/) • [GitHub](https://github.com/BritWallace) <br>
+Christen Weston - [Email](mailto:paleeserecycle@gmail.com) • [LinkedIn](https://www.linkedin.com/in/christenweston/) • [GitHub](https://github.com/ChristenWeston) <br>
+John Whitten - [Email](mailto:johnwhitten.studio@gmail.com) • [LinkedIn](https://www.linkedin.com/in/johnwhitten-studio/) • [GitHub](https://github.com/johnwhittenstudio) <br>
 
 
