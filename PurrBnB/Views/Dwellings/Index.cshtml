@@ -8,18 +8,10 @@
 
 <div class="row">
   <div class="col-md-12">
-
-<partial name="_MapsPartial"/>  
-
+<partial name="_MapsPartial"/>
     <div id="card" class="card border-dark">
       <div class="card-header">
         <h1 class="text-center">List of Available Dwellings</h1>
-        @* <div class="card" style="width:400px">
-        <img class="card-img-top" src="/img/aframe_01.jpg" alt="Card image"> *@
-        @* <div class="card-body">
-          <h4 class="card-title">Gallery</h4>
-          <p class="card-text">Some example text.</p>
-        </div> *@
       </div>
       &nbsp;
         <div class="row">
@@ -29,11 +21,8 @@
         </div>          
           &nbsp;
         <div class="flex-container">
-        
-      
           @if (Model.Any())
           {
-
             @foreach (Dwelling dwelling in Model)
             {
               <div class="col-md-5">
@@ -41,13 +30,9 @@
                   <div class="card-header">
                     <img class="card-img-top" src="/img/home_logo.png" alt="Card image">
                     <div class="display-field">
-                      @* <img class="img-thumbnail" src="@dwelling.ImagePath" asp-append-version="true" alt="@dwelling.ImagePath" /> *@
-                      @* <img src="@Url.Content(@Model.DwellingImage)" alt="@Model.AlternateText" /> *@
                     </div>
                     <div>
-                      @* <center> *@
                         <h2>@Html.ActionLink($"{dwelling.DwellingName}", "Details", new { id = dwelling.DwellingId})</h2>
-                      @* </center> *@
                     </div>
                     <div class="card-body text-primary">
 

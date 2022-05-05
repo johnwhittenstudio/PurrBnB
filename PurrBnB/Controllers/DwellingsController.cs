@@ -39,10 +39,7 @@ namespace PurrBnB.Controllers
 
     public ActionResult Index()
     {
-      // List<Dwelling> model = _db.Dwellings.OrderBy(dwelling => dwelling.DwellingOwnerName).ToList();
       List<Dwelling> model = _db.Dwellings.OrderBy(x => x.DwellingName).ToList();
-      // string wwwPath = this.webHostingEnvironment.WebRootPath;
-      // string contentPath = this.webHostingEnvironment.ContentRootPath;
       return View(model);
     }
 
@@ -51,7 +48,6 @@ namespace PurrBnB.Controllers
     {
       var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
       var currentUser = await _userManager.FindByIdAsync(userId);
-      //ViewBag.PetId = new SelectList(_db.Pets.OrderBy(pet => pet.Name), "PetId", "Name");
       ViewBag.GroundLevelAccess = new SelectList(_db.Dwellings, "GroundLevelAccess", "GroundLevelAccess");
       return View();
     }
@@ -69,29 +65,10 @@ namespace PurrBnB.Controllers
       _db.Dwellings.Add(dwelling);
       _db.SaveChanges();
 
-      // if (file != null || file.Length != 0)
-      // {
-      //   FileInfo fi = new FileInfo(file.FileName);
-      //   var newFilename = dwelling.DwellingId + "_" + String.Format("{0:d}", (DateTime.Now.Ticks / 10) % 100000000) + fi.Extension;
-        // var webPath = webHostingEnvironment.WebRootPath;
-        // var path = Path.Combine("", webPath + @"\img\" + newFilename);
-        // var pathToSave = @"/img/" + newFilename;
-        // using (var stream = new FileStream(path, FileMode.Create))
-        // {
-        //   await file.CopyToAsync(stream);
-        // }
-        // dwelling.ImagePath = pathToSave;
-      //   _db.Update(dwelling);
-      //   await _db.SaveChangesAsync();
-      //   {
-      //     return RedirectToAction(nameof(Index));
-      //   }
-      // }
 
       if (PetId != 0)
       {
-        //     _db.DwellingPets.Add(new DwellingPet() { PetId = PetId, DwellingId = dwelling.DwellingId});
-        //     _db.SaveChanges();
+
       }
       return RedirectToAction("Index");
     }

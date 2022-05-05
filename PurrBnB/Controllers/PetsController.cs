@@ -40,8 +40,6 @@ namespace  PurrBnB.Controllers
       _db.SaveChanges();
       if (DwellingId != 0)
       {
-        // _db.s.Add(new DwellingPet() {DwellingId = DwellingId, PetId = pet.PetId});
-        // _db.SaveChanges();
       }
       return RedirectToAction("Index");
     }

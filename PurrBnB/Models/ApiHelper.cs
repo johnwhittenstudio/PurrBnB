@@ -17,9 +17,7 @@ namespace PurrBnB.Models
       var result1 = response.Content;
       var result = result1;
       JToken noResponse = "noResponse";
-      //JToken latLong;
       JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
-      //JToken LatLong = jsonResponse["features"][0]["geometry"]["coordinates"];
       float latFloat = JsonConvert.DeserializeObject<float>(jsonResponse["features"][0]["geometry"]["coordinates"][1].ToString());
  
       return latFloat;

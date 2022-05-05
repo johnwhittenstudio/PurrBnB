@@ -6,26 +6,19 @@
 @model PurrBnB.Models.Dwelling
 
 <div class="row">
-  
   <div class="col-md-12">
-    
     <div id="card" class="card border-dark">
-      
       <div class="card-header">
         <h1 id="title" class="text-center">@Html.DisplayFor(model => model.DwellingName)'s details</h1>
       </div>
-      
       <div class="card-body">
-        
         <div class="row">
           <div class="col-12 text-center">
             <button class="btn btn-outline-primary">@Html.ActionLink("Edit Dwelling", "Edit", new {id = Model.DwellingId})</button>
             <button class="btn btn-outline-danger">@Html.ActionLink("Delete Dwelling", "Delete", new {id = Model.DwellingId})</button>
           </div>
         </div>
-        
         <br>
-        
         <div class="row">
           <div class="col-12">
             <table class="table table-bordered">
@@ -82,19 +75,15 @@
             }
           </div>
         </div>
-        
         <br>
-        
         <div class="row">
           <div class="col-12 text-center">
             <button class="btn btn-outline-info">@Html.ActionLink("Add a Pet", "AddPet", new{id =
               Model.DwellingId})</button>
             <button class="btn btn-outline-info">@Html.ActionLink("Back to listings", "Index")</button>
           </div>
-        </div>
-        
+        </div>       
       </div>
-        
       </div>
     </div>
   </div>

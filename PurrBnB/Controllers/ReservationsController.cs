@@ -61,7 +61,6 @@ namespace PurrBnB.Controllers
         .Include(reservation => reservation.JoinEntities2)
         .ThenInclude(join => join.Dwelling)
         .FirstOrDefault(reservation => reservation.ReservationId == id);
-      //ViewBag.Dwellings = _db.Dwellings.Where(entry = entry.DwellingId))
       return View(thisReservation);
     }
     [Authorize]
@@ -77,8 +76,6 @@ namespace PurrBnB.Controllers
     {
       var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
       var currentUser = await _userManager.FindByIdAsync(userId);
-      // _db.Entry(reservation).State = EntityState.Modified;
-      // _db.SaveChanges();
       bool duplicate = _db.DwellingReservations.Any(join => join.DwellingId == DwellingId && join.ReservationId == reservation.ReservationId);
       if (DwellingId != 0 && !duplicate)
       {
